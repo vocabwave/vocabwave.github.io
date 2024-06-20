@@ -1,0 +1,269 @@
+:root {
+    --primary: #222;
+    --secondary: #111;
+}
+
+/* Uni Classes */
+.heading {
+    font: caption;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: left;
+    width: 95%;
+    max-width: 75rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.marginTop {
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.bigHeading {
+    font: caption;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: left;
+    width: 100%;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.uniFont {
+    font: caption;
+    font-size: 1rem;
+    color: var(--uniFontClr);
+}
+
+#contactEmail {
+    color: rgb(246, 255, 0);
+}
+
+.userSlctNone {
+    user-select: none;
+}
+
+.userSlctNone::placeholder {
+    user-select: none;
+}
+
+.boldFont {
+    font-weight: bold;
+}
+
+.headingFont {
+    font-size: var(--headFont);
+    text-transform: uppercase;
+}
+
+.centreText {
+    text-align: center;
+    margin: auto;
+}
+
+.capitText {
+    text-transform: capitalize;
+    word-break: break-all;
+}
+
+.uniFont2 {
+    font: caption;
+    font-size: 0.9rem;
+    color: white;
+}
+
+body {
+    background-color: var(--primary);
+}
+
+nav {
+    background-color: var(--secondary);
+}
+
+#lightmodeBTN {
+    filter: invert();
+}
+
+#abtItsDeve {
+    margin-top: 1rem;
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+#HotToUse {
+    margin-top: 1rem;
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+#MoreNavWin>ul>a {
+    color: white;
+}
+
+#developerImg {
+    filter: invert();
+}
+
+#featureImg {
+    filter: invert();
+}
+
+#NavMoreLnkBtn>span {
+    filter: invert();
+}
+
+
+/* Home Section starts Here  */
+.HeadingHome {
+    font: caption;
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+
+#screenshotHome {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#screenshotHome>img {
+    height: 30rem;
+}
+
+#DownloadHomeBTN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#DownloadHomeBTN>a {
+    color: white;
+    font: caption;
+    font-size: 1rem;
+    margin: 0rem 0.5rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#DownloadHomeBTN>a:nth-child(1) {
+    background-color: aquamarine;
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    color: black;
+}
+
+#donateSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#donateSection>h2 {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#donateSection>h2>span {
+    background-image: url(/Files/heart.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+#donateSection>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#donateSection>div>div:nth-child(1) {
+    width: 100%;
+    max-width: 20rem;
+    margin: 1rem 2rem;
+}
+
+#donateSection>div>div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#donateSection>div>div:nth-child(2)>img {
+    width: 10rem;
+    height: auto;
+    margin: 1rem 0;
+}
+
+#donateSection>div>div:nth-child(2)>p {
+    font: caption;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 840px) {
+    .HeadingHome {
+        margin-top: 1rem;
+    }
+
+    #abtItsDeve>div:nth-child(1) {
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 615px) {
+    nav>ul {
+        display: none;
+    }
+
+    #NavMoreLnkBtn {
+        display: flex;
+    }
+
+    #brandLogo {
+        margin: 0;
+        left: 0;
+    }
+
+    .HeadingHome {
+        font-size: 1.7rem;
+    }
+
+}
